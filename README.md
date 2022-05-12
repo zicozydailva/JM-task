@@ -1,5 +1,9 @@
 # A simple API to search products in JSON format
 
+###### NOTE ##########
+* to run server - "npx nodemon"
+* to run test script - "npm run test"
+
 ## Features
 1. Can make a request and get ALL AVAILABLE PRODUCTS and TOTAL NUMBER of products.
 2. Can search for products base on desired SPECIFICATION.
@@ -22,3 +26,7 @@
 3. Browser - Chrome
 4. Running instance of MongoDB
 5. Node.js
+
+
+## Link to a test carried out on postman
+https://drive.google.com/file/d/1CMOplLCnA2ffNxeikR6tp5wurblw2sJg/view?usp=sharing
