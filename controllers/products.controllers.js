@@ -1,14 +1,5 @@
 const Product = require("../models/Product")
 
-const getProducts = async (req, res) => {
-    try {
-        const data = await Product.find({})
-        res.status(200).json(data)
-    } catch (error) {
-        res.status(500).json(error)
-    }
-}
-
 const getAllProducts = async (req, res) => {
     try {
         const {sort, price, specifications, search} = req.query
@@ -53,9 +44,9 @@ const getAllProducts = async (req, res) => {
 
         let products = await result
 
-        let productTotal = await Product.countDocuments
+        let productTotal = await Product.countDocuments(queryObject)
 
-        res.status(200).json({products, productTotal})
+        res.status(200).json({productTotal, products})
 
     } catch (error) {
         res.status(500).json(error)
