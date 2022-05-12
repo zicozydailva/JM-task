@@ -6,7 +6,7 @@ const connectDB = require("./utils/connectDB")
 const productRoute = require("./routes/product.routes");
 
 const app = express();
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 8081;
 
 // MIDDLEWARES
 app.use(express.json());
@@ -25,3 +25,6 @@ const start = () => {
   }
 };
 start()
+
+
+module.exports = app
